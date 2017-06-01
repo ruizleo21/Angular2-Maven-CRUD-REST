@@ -1,0 +1,52 @@
+<h5>{{title}}</h5>
+<div class="row">
+  <form materialize class="col s12" [formGroup]="form" (ngSubmit)="save()">
+    <div class="row">
+      <input id="id" type="hidden" formControlName="id" [(ngModel)]="user.id">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="name" type="text" class="validate"
+               [(ngModel)]="user.name" formControlName="name"
+               [class.invalid]="form.controls['name'].touched && !form.controls['name'].valid"
+        >
+        <label for="name"
+               [class.active]="user.name"
+               data-error="Name is required and needs to contain at least 3 chars">
+               Name
+        </label>
+      </div>
+    </div>
+    <div class="row">
+    <div class="input-field col s12">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="age" type="number" class="validate" 
+               [(ngModel)]="user.age" formControlName="age"
+               [class.invalid]="form.controls['age'].touched && !form.controls['age'].valid"
+        >
+        <label for="age"
+               [class.active]="user.age"
+               data-error="Age is required and needs to contain at least 1 number">
+               Age
+        </label>
+      </div>
+    </div>
+    <div class="row">
+    <div class="input-field col s12">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="salary" type="text" class="validate"
+               [(ngModel)]="user.salary" formControlName="salary"
+               [class.invalid]="form.controls['salary'].touched && !form.controls['salary'].valid"
+        >
+        <label for="salary"
+               [class.active]="user.salary"
+               data-error="salary is required and needs to contain at least 1 number">
+               Salary
+        </label>
+      </div>
+    </div>
+    <button class="btn waves-effect waves-light" type="submit"
+            [disabled]="!form.valid">
+      Submit<i class="material-icons right">send</i>
+    </button>
+  </form>
+</div>

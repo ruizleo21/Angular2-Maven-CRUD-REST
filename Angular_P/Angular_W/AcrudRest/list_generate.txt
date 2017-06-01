@@ -1,0 +1,83 @@
+  Available blueprints
+    class <name> <options...>
+      aliases: cl
+      --spec (Boolean) Specifies if a spec file is generated.
+      --app (String) Specifies app name to use.
+        aliases: -a <value>
+    component <name> <options...>
+      aliases: c
+      --flat (Boolean) Flag to indicate if a dir is created.
+      --inline-template (Boolean) Specifies if the template will be in the ts file.
+        aliases: -it
+      --inline-style (Boolean) Specifies if the style will be in the ts file.
+        aliases: -is
+      --prefix (String) (Default: null) Specifies whether to use the prefix.
+      --spec (Boolean) Specifies if a spec file is generated.
+      --view-encapsulation (String) Specifies the view encapsulation strategy.
+        aliases: -ve <value>
+      --change-detection (String) Specifies the change detection strategy.
+        aliases: -cd <value>
+      --skip-import (Boolean) (Default: false) Allows for skipping the module import.
+      --module (String) Allows specification of the declaring module.
+        aliases: -m <value>
+      --export (Boolean) (Default: false) Specifies if declaring module exports the component.
+      --app (String) Specifies app name to use.
+        aliases: -a <value>
+    directive <name> <options...>
+      aliases: d
+      --flat (Boolean) Flag to indicate if a dir is created.
+      --prefix (String) (Default: null) Specifies whether to use the prefix.
+      --spec (Boolean) Specifies if a spec file is generated.
+      --skip-import (Boolean) (Default: false) Allows for skipping the module import.
+      --module (String) Allows specification of the declaring module.
+        aliases: -m <value>
+      --export (Boolean) (Default: false) Specifies if declaring module exports the component.
+      --app (String) Specifies app name to use.
+        aliases: -a <value>
+    enum <name> <options...>
+      aliases: e
+      --app (String) Specifies app name to use.
+        aliases: -a <value>
+    guard <name> <options...>
+      aliases: g
+      --flat (Boolean) Indicate if a dir is created.
+      --spec (Boolean) Specifies if a spec file is generated.
+      --module (String) Specifies where the guard should be provided.
+        aliases: -m <value>
+    interface <interface-type> <options...>
+      aliases: i
+      --app (String) Specifies app name to use.
+        aliases: -a <value>
+    module <name> <options...>
+      aliases: m
+      --spec (Boolean) Specifies if a spec file is generated.
+      --flat (Boolean) Flag to indicate if a dir is created.
+      --routing (Boolean) (Default: false) Specifies if a routing module file should be generated.
+      --app (String) Specifies app name to use.
+        aliases: -a <value>
+    pipe <name> <options...>
+      aliases: p
+      --flat (Boolean) Flag to indicate if a dir is created.
+      --spec (Boolean) Specifies if a spec file is generated.
+      --skip-import (Boolean) (Default: false) Allows for skipping the module import.
+      --module (String) Allows specification of the declaring module.
+        aliases: -m <value>
+      --export (Boolean) (Default: false) Specifies if declaring module exports the pipe.
+      --app (String) Specifies app name to use.
+        aliases: -a <value>
+    service <name> <options...>
+      aliases: s
+      --flat (Boolean) Flag to indicate if a dir is created.
+      --spec (Boolean) Specifies if a spec file is generated.
+      --module (String) Specifies where the service should be provided.
+        aliases: -m <value>
+      --app (String) Specifies app name to use.
+        aliases: -a <value>
+ng generate <blueprint> <options...>
+  Generates and/or modifies files based on a blueprint.
+  aliases: g
+  --dry-run (Boolean) (Default: false) Run through without making any changes.
+    aliases: -d, --dryRun
+  --verbose (Boolean) (Default: false) Adds more details to output logging.
+    aliases: -v, --verbose
+
